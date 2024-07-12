@@ -1263,7 +1263,7 @@ body.menu-close>.main-nav::before {
   stroke-width: 1;
   stroke-dasharray: 9680;
   stroke-dashoffset: 9680;
-  animation: animate 10s forwards;
+  animation: animate 11s forwards;
 }
 
 @keyframes animate {

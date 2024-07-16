@@ -816,66 +816,66 @@ $(document).ready(function () {
 });
 
 // Site Loder Js
-$(document).ready(function () {
-    // Function to calculate loading time
-    function getLoadingTime() {
-        const timing = window.performance.timing;
-        const loadEventEnd = timing.loadEventEnd || new Date().getTime(); // Fallback for Safari
-        const navigationStart = timing.navigationStart || performance.timeOrigin || new Date().getTime(); // Fallback for Safari
+// $(document).ready(function () {
+//     // Function to calculate loading time
+//     function getLoadingTime() {
+//         const timing = window.performance.timing;
+//         const loadEventEnd = timing.loadEventEnd;
+//         const navigationStart = timing.navigationStart;
 
-        if (loadEventEnd > navigationStart) {
-            return loadEventEnd - navigationStart;
-        } else {
-            console.warn('loadEventEnd is 0, returning a fallback value');
-            return new Date().getTime() - navigationStart;
-        }
-    }
+//         if (loadEventEnd > 0) {
+//             return loadEventEnd - navigationStart;
+//         } else {
+//             console.warn('loadEventEnd is 0, returning a fallback value');
+//             return new Date().getTime() - navigationStart;
+//         }
+//     }
 
-    // Function to display loading time in loader
-    function displayLoadingTime() {
-        const loader = document.getElementById('loader');
-        if (!loader) {
-            console.error('Loader element not found');
-            return;
-        }
+//     // Function to display loading time in loader
+//     function displayLoadingTime() {
+//         const loader = document.getElementById('loader');
+//         if (!loader) {
+//             console.error('Loader element not found');
+//             return;
+//         }
 
-        const loadTime = getLoadingTime();
-        console.log('Load time:', loadTime);
+//         const loadTime = getLoadingTime();
+//         console.log('Load time:', loadTime);
 
-        // Set animation duration for 'dis' class elements
-        const disElements = document.querySelectorAll('#loader .dis');
-        disElements.forEach(element => {
-            element.style.animationDuration = (loadTime * 2) + 'ms';
-        });
-        console.log('Set animation duration for dis elements');
+//         // Set animation duration for 'dis' class elements
+//         const disElements = document.querySelectorAll('#loader .dis');
+//         disElements.forEach(element => {
+//             element.style.animationDuration = (loadTime * 2) + 'ms';
+//         });
+//         console.log('Set animation duration for dis elements');
 
-        // Set half of the loadTime for specific classes
-        const halfLoadTime = loadTime;
-        console.log('Half load time:', halfLoadTime);
+//         // Set half of the loadTime for specific classes
+//         const halfLoadTime = loadTime;
+//         console.log('Half load time:', halfLoadTime);
 
-        const classesToAdjust = ['#loader .ic', '#loader .yazi_k', '#loader .yazi_risk', '#loader .yazi_24'];
+//         const classesToAdjust = ['#loader .ic', '#loader .yazi_k', '#loader .yazi_risk', '#loader .yazi_24'];
 
-        classesToAdjust.forEach(className => {
-            const elements = document.querySelectorAll(className);
-            if (elements.length === 0) {
-                console.warn(`No elements found for class ${className}`);
-            }
-            elements.forEach(element => {
-                element.style.animationDuration = halfLoadTime + 'ms';
-            });
-        });
-        console.log('Set animation duration for specific classes');
+//         classesToAdjust.forEach(className => {
+//             const elements = document.querySelectorAll(className);
+//             if (elements.length === 0) {
+//                 console.warn(`No elements found for class ${className}`);
+//             }
+//             elements.forEach(element => {
+//                 element.style.animationDuration = halfLoadTime + 'ms';
+//             });
+//         });
+//         console.log('Set animation duration for specific classes');
 
-        // Hide the loader
-        loader.style.display = 'none';
-        console.log('Loader hidden');
-    }
+//         // Hide the loader
+//         loader.style.display = 'none';
+//         console.log('Loader hidden');
+//     }
 
-    // Wait for the window to fully load before displaying the loading time
-    window.addEventListener('load', function () {
-        displayLoadingTime();
-    });
-});
+//     // Wait for the window to fully load before displaying the loading time
+//     window.addEventListener('load', function () {
+//         displayLoadingTime();
+//     });
+// });
 
 // Footer Team Swiper
 $(document).ready(function () {

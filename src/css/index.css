@@ -9,7 +9,7 @@
     }
 
     body {
-        @apply bg-black font-Avenir;
+        @apply bg-black font-Avenir cursor-none;
     }
 
     #loader {

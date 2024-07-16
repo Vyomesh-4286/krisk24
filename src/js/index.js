@@ -820,10 +820,10 @@ $(document).ready(function () {
     // Function to calculate loading time
     function getLoadingTime() {
         const timing = window.performance.timing;
-        const loadEventEnd = timing.loadEventEnd;
-        const navigationStart = timing.navigationStart;
+        const loadEventEnd = timing.loadEventEnd || new Date().getTime(); // Fallback for Safari
+        const navigationStart = timing.navigationStart || performance.timeOrigin || new Date().getTime(); // Fallback for Safari
 
-        if (loadEventEnd > 0) {
+        if (loadEventEnd > navigationStart) {
             return loadEventEnd - navigationStart;
         } else {
             console.warn('loadEventEnd is 0, returning a fallback value');

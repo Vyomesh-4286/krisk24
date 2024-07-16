@@ -479,7 +479,7 @@
 
     /* Video Grid Section Css Start */
     .video_grid_sec {
-        @apply lg:py-[140px] md:py-[70px] sm:py-[35px] py-[20px] lg:px-[240px] md:px-[120px] sm:px-[60px] px-[30px] z-10 relative;
+        @apply lg:my-[280px] md:my-[140px] sm:my-[70px] my-[40px] lg:mx-[240px] md:mx-[120px] sm:mx-[60px] mx-[30px] z-10 relative;
     }
 
     .video_grid_sec .video_grid_container {

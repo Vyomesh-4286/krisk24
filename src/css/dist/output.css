@@ -477,7 +477,7 @@ body {
 
 canvas {
   z-index: 9;
-  mix-blend-mode: color;
+  mix-blend-mode: difference;
 }
 
 .grid_video,

@@ -46,7 +46,7 @@
 
     .header .logo svg,
     .header .logo img {
-        @apply w-[132px] h-[132px] object-cover;
+        @apply w-[132px] h-[132px] object-cover z-[99999];
     }
 
     body.menu-open .header .nav_menu {
@@ -82,7 +82,9 @@
     }
 
     .header .logo:hover .dis,
-    .header .logo:hover .ic {
+    .header .logo:hover .ic,
+    .footer .footer-logo .dis,
+    .footer .footer-logo .ic {
         animation-iteration-count: infinite;
     }
 
@@ -396,6 +398,42 @@
         @apply text-3xl text-white;
     }
 
+    .footer .footer-nav {
+        @apply md:py-[70px] sm:py-[35px] py-[20px] md:px-[100px] sm:px-[50px] px-[25px];
+    }
+
+    .footer .footer-nav .menu {
+        @apply relative py-0 !px-0 !h-fit;
+    }
+
+    .footer .footer-nav .menu li {
+        @apply !border-0;
+    }
+
+    .footer .footer-nav .menu li a {
+        @apply !px-0;
+    }
+
+    .footer .footer_team_img {
+        @apply relative;
+    }
+
+    .footer .footer_team_img .swiper-slide {
+        @apply relative pt-[79.78%];
+    }
+
+    .footer .footer_team_img .swiper-slide img {
+        @apply w-full h-full object-cover absolute top-0 left-0;
+    }
+
+    .footer .footer-logo {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] p-4 rounded-full z-[9999] bg-white;
+    }
+
+    .footer .footer-logo svg {
+        @apply w-full h-full object-cover z-[99999];
+    }
+
     /* Footer End */
 
     /* Banner Css Start */
@@ -404,7 +442,7 @@
     }
 
     .banner::before {
-        @apply content-[''] absolute top-0 left-0 w-full h-full bg-black opacity-80 z-[1];
+        @apply content-[''] absolute top-0 left-0 w-full h-full bg-black opacity-65 z-[1];
     }
 
     .banner .banner_content {
@@ -427,7 +465,7 @@
 
     /* Video Grid Section Css Start */
     .video_grid_sec {
-        @apply lg:my-[280px] md:my-[140px] sm:my-[70px] my-[40px] lg:mx-[240px] md:mx-[120px] sm:mx-[60px] mx-[30px] z-10 relative;
+        @apply 2xl:my-[280px] lg:my-[140px] md:my-[70px] my-[40px] 2xl:mx-[240px] lg:mx-[120px] md:mx-[60px] mx-[30px] z-10 relative;
     }
 
     .video_grid_sec .video_grid_container {

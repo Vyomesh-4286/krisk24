@@ -449,7 +449,7 @@ video {
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  font-family: Avenir LT Std;
+  font-family: Avenir;
 }
 
 #loader {
@@ -921,7 +921,7 @@ body.menu-close>.main-nav::before {
   padding-left: 60px !important;
   padding-right: 60px !important;
   text-align: left !important;
-  font-family: NeueHaasUnicaW1G-Regular !important;
+  font-family: Neue Haas Unica !important;
   font-size: 100px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
@@ -1528,74 +1528,4 @@ body.menu-close>.main-nav::before {
 .text-\[\#ff0000\] {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
-}
-
-@font-face {
-  font-family: 'Avenir LT Std';
-
-  src: url('/./fonts/AvenirLTStd-Black.eot');
-
-  src: url('/./fonts/AvenirLTStd-Black.eot') format('embedded-opentype'),
-        url('/./fonts/AvenirLTStd-Black.woff2') format('woff2'),
-        url('/./fonts/AvenirLTStd-Black.woff') format('woff'),
-        url('/./fonts/AvenirLTStd-Black.ttf') format('truetype'),
-        url('/./fonts/AvenirLTStd-Black.svg') format('svg');
-
-  font-weight: 900;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Avenir LT Std';
-
-  src: url('/./fonts/AvenirLTStd-Book.eot');
-
-  src: url('/./fonts/AvenirLTStd-Book.eot') format('embedded-opentype'),
-        url('/./fonts/AvenirLTStd-Book.woff2') format('woff2'),
-        url('/./fonts/AvenirLTStd-Book.woff') format('woff'),
-        url('/./fonts/AvenirLTStd-Book.ttf') format('truetype'),
-        url('/./fonts/AvenirLTStd-Book.svg') format('svg');
-
-  font-weight: normal;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Avenir LT Std';
-
-  src: url('/./fonts/AvenirLTStd-Roman.eot');
-
-  src: url('/./fonts/AvenirLTStd-Roman.eot') format('embedded-opentype'),
-        url('/./fonts/AvenirLTStd-Roman.woff2') format('woff2'),
-        url('/./fonts/AvenirLTStd-Roman.woff') format('woff'),
-        url('/./fonts/AvenirLTStd-Roman.ttf') format('truetype'),
-        url('/./fonts/AvenirLTStd-Roman.svg') format('svg');
-
-  font-weight: normal;
-
-  font-style: normal;
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'NeueHaasUnicaW1G-Regular';
-
-  src: url('/./fonts/NeueHaasUnicaW1G-Regular.eot');
-
-  src: url('/./fonts/NeueHaasUnicaW1G-Regular.eot') format('embedded-opentype'),
-        url('/./fonts/NeueHaasUnicaW1G-Regular.woff2') format('woff2'),
-        url('/./fonts/NeueHaasUnicaW1G-Regular.woff') format('woff'),
-        url('/./fonts/NeueHaasUnicaW1G-Regular.ttf') format('truetype'),
-        url('/./fonts/NeueHaasUnicaW1G-Regular.svg') format('svg');
-
-  font-weight: 900;
-
-  font-style: italic;
 }

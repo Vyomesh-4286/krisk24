@@ -485,7 +485,7 @@
     }
 
     .information.video_grid_sec .video_grid_container .grid_content {
-        @apply -mr-[150px] ml-0;
+        @apply -mr-[200px] ml-0;
     }
 
     .video_grid_sec .video_grid_container .grid_content h2 {

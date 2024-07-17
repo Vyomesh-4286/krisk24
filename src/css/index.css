@@ -9,7 +9,7 @@
     }
 
     body {
-        @apply bg-black font-Avenir cursor-none;   
+        @apply bg-black font-Avenir cursor-none;
     }
 
     #loader {
@@ -489,7 +489,11 @@
     }
 
     .video_grid_sec .video_grid_container .grid_content h2 {
-        @apply text-white text-[82px] font-bold relative mb-[40px];
+        @apply text-white text-[82px] font-bold relative mb-[40px] w-fit;
+    }
+
+    .video_grid_sec.features_sec .video_grid_container .grid_content h2 {
+        @apply text-[60px];
     }
 
     .video_grid_sec .video_grid_container .grid_content h2::before {
@@ -556,6 +560,22 @@
         @apply content-[''] absolute right-0 top-0 h-full w-px bg-[#ff0000] last:hidden;
     }
 
+    .video_grid_sec .video_grid_container .grid_content .features .sun_features_grid {
+        @apply mt-4;
+    }
+
+    .video_grid_sec .video_grid_container .grid_content .features .sun_features_grid .sun_features_heading {
+        @apply relative text-[24px] font-normal text-white pr-[20px] pl-6 mb-2;
+    }
+
+    .video_grid_sec .video_grid_container .grid_content .features .sun_features_grid .sun_features_heading::before {
+        @apply content-[''] absolute top-1/2 -translate-y-1/2 bg-[#ff0000] left-0 w-4 h-4 rounded-full;
+    }
+
+    .video_grid_sec .video_grid_container .grid_content .features .sun_features_grid .sun_features_dec {
+        @apply relative text-[20px] font-light text-white pr-[20px] pl-6 mb-3;
+    }
+
     /* Video Grid Section Css End */
 
     /* About Page Stat */
@@ -577,4 +597,43 @@
     }
 
     /* About Page End */
+
+    /* Contact Start */
+    .contact_form {
+        @apply bg-white rounded-2xl md:p-[90px] sm:p-[60px] p-[30px] my-10;
+    }
+
+    .contact_form .form-control {
+        @apply relative;
+    }
+
+    .contact_form .form-control input {
+        @apply w-full border-0 placeholder:text-black placeholder:text-opacity-40 transition-all duration-300 ease-in-out relative outline-0 ring-0;
+    }
+
+    .contact_form .form-control::before,
+    .contact_form .form-control::after {
+        @apply content-[''] absolute bottom-0 left-0 bg-black w-full h-px z-10 bg-opacity-15 transition-all duration-300 ease-in-out;
+    }
+
+    .contact_form .form-control::after {
+        @apply w-0 z-20 bg-opacity-100;
+    }
+
+    .contact_form .form-control:focus:after,
+    .contact_form .form-control:focus-visible:after,
+    .contact_form .form-control:focus-within:after {
+        @apply w-full;
+    }
+
+    .contact_form .form-control:last-child:before,
+    .contact_form .form-control:last-child:after {
+        @apply hidden;
+    }
+
+    .contact_form .form-control .btn-submit {
+        @apply w-full bg-white py-4 px-8 border border-solid border-black rounded-2xl text-xl font-medium transition-all duration-300 ease-in-out hover:bg-black hover:text-white; 
+    }
+
+    /* Contact End */
 }
